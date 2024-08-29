@@ -6,6 +6,7 @@ func Convert(number int) string {
 	result := getDivisibleByText(number, "Pling", divisibleBy(3))
 	result += getDivisibleByText(number, "Plang", divisibleBy(5))
 	result += getDivisibleByText(number, "Plong", divisibleBy(7))
+
 	if len(result) == 0 {
 		return strconv.Itoa(number)
 	}
