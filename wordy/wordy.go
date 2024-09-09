@@ -61,7 +61,7 @@ func (p multiply) apply(n1 int, n2 int) int {
 
 func Answer(question string) (int, bool) {
 	expression := getExpression(question)
-	
+
 	if len(expression) != 1 && len(expression) != 3 && len(expression) != 5 {
 		return 0, false
 	}
